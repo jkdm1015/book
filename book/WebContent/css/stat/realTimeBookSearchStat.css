@@ -1,0 +1,84 @@
+@CHARSET "UTF-8";
+@IMPORT url("stat-common.css");
+
+section, article, aside, div{
+	//border:1px solid orange;
+}
+
+section.tabPanel{
+	text-align:left;
+	padding:0;
+	margin-bottom:30px;
+	border:1px solid #EAEAEA;
+}
+
+section.tabPanel ul{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+
+section.tabPanel ul li{
+	display:inline-block;
+	padding:10px;
+	margin:0;
+	border:3px solid #EAEAEA;
+	border-collapse:collapse;
+}
+
+section.tabPanel ul li.selected{
+	color:#FFBB00;
+	font-weight:bold;
+}
+
+section.tabPanel ul li:not(.selected){
+	cursor:pointer;
+}
+
+section.tabPanel ul li:not(.selected):hover{
+	background-color:#FAECC5;
+	font-weight:bold;
+}
+
+
+
+section.rankBox table.rankTable{
+	text-align:left;
+	width:100%;
+	border:1px solid gray;
+}
+
+section.rankBox table.rankTable thead th{
+	border:1px solid black;
+	border-collapse:collapse;
+	text-align:center;
+	font-size:16pt;
+}
+
+section.rankBox table.rankTable td{
+	text-align:center;
+	font-size:12pt;
+}
+
+section.rankBox table.rankTable td a{
+	color: #222;
+	text-decoration: none;
+}
+
+section.rankBox table.rankTable td a:hover{
+	color: #390;
+    text-decoration: underline;
+}
+
+section.rankBox table.rankTable td a:VISITED{
+	color: #222;
+	text-decoration: none;
+}
+
+section.rankBox table.rankTable tbody tr.odd{
+	background-color:#D8D8D8;
+}
+
+section.rankBox table.rankTable tbody tr.even{
+	background-color:#C6C6C6;
+}

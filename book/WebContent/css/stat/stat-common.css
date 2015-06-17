@@ -1,0 +1,112 @@
+@CHARSET "UTF-8";
+
+
+article#statContent{
+	width:1200px; 
+	margin:0 auto; 
+	overflow:visible;
+	padding:0;
+	text-align:center;
+	height:100%;	
+}
+
+aside#statLeftSnb{
+	border:1px solid black;
+	display:inline-block;
+	width:250px;
+	overflow:hidden;
+	min-height:1200px;
+	padding-top:100px;
+	vertical-align:top;
+	text-align:left;
+	background-color:#D8D8D8;
+}
+
+aside#statLeftSnb ul{
+	list-style:none;
+	margin:0;
+	padding:0;
+	text-align:center;
+}
+
+aside#statLeftSnb li{
+	display:inline-block;
+	width:200px;
+	border-bottom-left-radius:25%;
+	border-bottom-right-radius:25%;
+	border-top-left-radius:25%;
+	border-top-right-radius:25%;
+	background-color:#fff;
+	margin:0 auto;
+	margin-bottom:30px; /* 재정의 */
+	text-align:center;
+	color:black;
+}
+
+aside#statLeftSnb li a{
+	color: #222;
+    text-decoration: none;
+	font-size:16pt;
+	font-weight:bold;
+	font-family:"dotum";
+	
+}
+
+aside#statLeftSnb li a:hover{
+	color: #390;
+    text-decoration: underline
+}
+
+
+article#rightContent{
+	float:right;
+	display:inline-block;
+	width:70%;
+	vertical-align:top;
+	padding:30px 10px;
+}
+
+div#dateControlPanel{
+	margin-bottom:60px;
+	background-color:#D8D8D8;
+}
+
+div.chartBox{
+	border:2px solid gray;
+	margin:0 auto;
+	display:inline-block;
+	width:99%;
+	min-height:200px;
+}
+
+
+
+div.statRule{
+	clear:both;
+	float:right;
+	width:350px;
+	min-height:100px;
+	text-align:left;
+	background-color:#F6F6F6;
+	border:1px solid gray;
+	padding:20px;
+	margin:0;
+	margin-top:100px;
+}
+
+div.statRule ul{
+	list-style: none;
+	padding:0;
+	margin:0;
+}
+
+div.statRule ul li{
+	list-style:none;
+	list-style-type:none;
+	list-style-position: inside;
+	margin-bottom:10px;
+	font-size:13pt;
+	font-family:"gulim";
+	
+}
+
