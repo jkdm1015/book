@@ -28,7 +28,7 @@
 </head>
 <body>
 	
-	
+	<%-- <jsp:include page="<%=request.getContextPath()%>/views/main/header.jsp"/> --%>
 <article id="statContent">
 	
 	<jsp:include page="/views/stat/jsp/parts/leftSnb.jsp" />
