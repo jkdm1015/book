@@ -24,8 +24,8 @@
 	
 </head>
 <body>
-	<div><jsp:include page="../../main/header.jsp"/></div>
-	<br />
+	
+	<jsp:include page="/views/main/header.jsp"/>
 		
 	<article id="statContent">
 		<jsp:include page="/views/stat/jsp/parts/leftSnb.jsp" />
@@ -237,13 +237,8 @@
 		</article><!-- rightContent -->
 	</article><!-- statContent -->
 
-<script>
+<jsp:include page="/views/main/footer.jsp" />
 
-
-</script>		
-
-<div>
-<jsp:include page="../../main/footer.jsp"/>
-</div>	
+	
 </body>
 </html>

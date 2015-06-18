@@ -14,7 +14,7 @@ import com.homepage.reservation.beans.R​eservationBean;
 /**
  * Servlet implementation class reservationControllerMine
  */
-@WebServlet({"/result.soso","/del.soso"})
+@WebServlet({"/result.soso","/del.soso","/reservation.soso"})
 public class ReservationControllerMine extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	 String memberId;
@@ -23,6 +23,8 @@ public class ReservationControllerMine extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		  switch (request.getServletPath()) {
+		  case "/reservation.soso" : RequestDispatcher dispatcher = request.getRequestDispatcher("/views/reservation/reservationSeatForm.jsp");
+		  							dispatcher.forward(request, response); break;
 		  case "/result.soso" : goResult(request, response); break;
 		  case "/del.soso" : goDel(request, response); break;
 		  default:
@@ -32,7 +34,7 @@ public class ReservationControllerMine extends HttpServlet {
 	}
 	private void goResult(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 	  goData(request);
-	  RequestDispatcher dispatcher = request.getRequestDispatcher("/views/reservation/onlyContentR.jsp");
+	  RequestDispatcher dispatcher = request.getRequestDispatcher("/views/reservation/resultForm.jsp");
 	  dispatcher.forward(request, response);
 	  
 	}
@@ -40,7 +42,7 @@ public class ReservationControllerMine extends HttpServlet {
 	  request.setAttribute("memberId", memberId);
 	  request.setAttribute("seatNo", Integer.toString(bean.getSeatNo()));
 	  request.setAttribute("wanted", bean.getDateAndTime());
-	  RequestDispatcher dispatcher = request.getRequestDispatcher("/views/reservation/onlyContentD.jsp");
+	  RequestDispatcher dispatcher = request.getRequestDispatcher("/views/reservation/delForm.jsp");
 	  dispatcher.forward(request, response);
 	 }
 	 private void goData(HttpServletRequest request) {

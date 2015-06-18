@@ -24,9 +24,9 @@
 	
 </head>
 <body>
-
-<div><jsp:include page="../../main/header.jsp"/></div>
-<br />
+	
+	
+<jsp:include page="/views/main/header.jsp"/>
 	
 <article id="statContent">
 	<jsp:include page="/views/stat/jsp/parts/leftSnb.jsp" />
@@ -60,9 +60,9 @@
 	</article>
 </article>
 
+<jsp:include page="/views/main/footer.jsp" />
 
 <script>
-
 $(function(){
 	var xCategories = ['13일', '14일', '15일', '16일', '17일', '18일', '19일']; 
 	var chartData = [
@@ -75,20 +75,12 @@ $(function(){
 	
 	drawChart(".highChartContainer", "?년?월?일 ~ ?년?월?일", xCategories, chartData);
 	
-
 	/*['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
 	'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']*/
 }());
-
-
-
-
-
 </script>
 
-<div>
-<jsp:include page="../../main/footer.jsp"/>
-</div>	
+	
 	
 </body>
 </html>
