@@ -24,7 +24,8 @@
 	
 </head>
 <body>
-	
+	<div><jsp:include page="../../main/header.jsp"/></div>
+	<br />
 		
 	<article id="statContent">
 		<jsp:include page="/views/stat/jsp/parts/leftSnb.jsp" />
@@ -241,6 +242,8 @@
 
 </script>		
 
-	
+<div>
+<jsp:include page="../../main/footer.jsp"/>
+</div>	
 </body>
 </html>

@@ -27,7 +27,8 @@
 	<script src="<%=request.getContextPath()%>/js/stat/favBookByAgeGroup.js"></script>
 </head>
 <body>
-	
+	<div><jsp:include page="../../main/header.jsp"/></div>
+	<br />
 	<%-- <jsp:include page="<%=request.getContextPath()%>/views/main/header.jsp"/> --%>
 <article id="statContent">
 	
@@ -778,8 +779,9 @@ $(function(){
 });
 	
 </script>
-
-	
+<div>
+<jsp:include page="../../main/footer.jsp"/>
+</div>	
 	
 </body>
 </html>
