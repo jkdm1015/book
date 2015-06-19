@@ -41,7 +41,7 @@
 		<section class="rightContent">
 		
 			<form action="<%=request.getContextPath()%>/member/SignUpNew.soso" name="form" method="post">
-				<table width="1400" height="650">
+				<table height="650">
 					<tr>
 						<td width="100%" height="63px"><b>회원가입</b></td>
 					</tr>

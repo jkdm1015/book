@@ -15,7 +15,7 @@
 		<table id="noneT" align="center" style="width: 80%; height: 50px;">
 			<tr>
 				<td class="centT"><a href="<%=request.getContextPath()%>/main.soso">HOME</a></td>
-				<td class="centT"><a href="#">자료검색</a></td>
+				<td class="centT"><a href="<%=request.getContextPath()%>/book/Aside/BookInfoSearch.soso">자료검색</a></td>
 				<td class="centT"><a href="<%=request.getContextPath()%>/reservation.soso">신청/예약</a></td>
 				<td class="centT"><a href="<%=request.getContextPath()%>/board/list.soso">게시판</a></td>
 				<td class="centT"><a href="<%=request.getContextPath()%>/stat/favBook.soso">통계</a></td>

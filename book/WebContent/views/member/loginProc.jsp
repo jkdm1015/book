@@ -12,9 +12,11 @@
 </head>
 <body>
 <div><jsp:include page="../main/header.jsp"/></div>
+<div style="min-height: 600px">
 <br /><br />
 <%=id %>님 반갑습니다<br>
 <%=pass %>
+</div>
 <div><jsp:include page="../main/footer.jsp"/></div>	
 </body>
 </html>

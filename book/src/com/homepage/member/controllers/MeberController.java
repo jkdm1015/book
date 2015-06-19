@@ -1,4 +1,4 @@
-package com.hompage.member.controllers;
+package com.homepage.member.controllers;
 
 import java.io.IOException;
 

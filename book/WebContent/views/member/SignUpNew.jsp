@@ -65,7 +65,7 @@
 		<section class="rightContent">
 
 			<form action="<%=request.getContextPath()%>/views/member/regFormProc.jsp" name="form" method="post">
-				<table width="1400" height="650">
+				<table width="80%" height="650">
 					<tr>
 						<td width="100%" height="63px"><b>회원가입</b></td>
 					</tr>
