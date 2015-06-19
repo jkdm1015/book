@@ -5,7 +5,7 @@
 <head>
 	<meta charset="UTF-8" />
 	<title>Only Content Frame</title>
-	<style>@import url(<%=request.getContextPath()%>/css/main/onlyContent.css);</style>
+	<style>@import url("<%=request.getContextPath()%>/css/main/onlyContent.css");</style>
 </head>
 <body>
 <div id="wrap" class="clear">
@@ -19,9 +19,13 @@
 						<td class="tab"><a href="#">자유</a></td>
 					</tr>
 					<tr class="tab">
-						<td class="tab centTd" colspan="2">내용</td>
+					<style>
+						@import url("<%=request.getContextPath()%>/css/board/boardWrite.css");
+					</style>
+					<td colspan="2"><jsp:include page="../board/mainBoard.jsp" /></td>
 					</tr>
 				</table>
+				<style>@import url(<%=request.getContextPath()%>/css/main/onlyContent.css);</style>
 				<br /><br /><br /><br />
 				<table class="tab" align="center">
 					<tr class="tab" style="height: 50px">

@@ -8,7 +8,7 @@
 	최상위 div에게 보통 주어진다. 문법적 의미는 없다. -->
 <header id="top">
 	<div id="login">
-		<a href="#">회원가입</a> | <a href="#">로그인</a> | <a href="#">사이트맵</a>
+		<a href="<%=request.getContextPath()%>/views/member/Agree.jsp">회원가입</a> | <a href="<%=request.getContextPath()%>/views/member/loginForm.jsp">로그인</a> | <a href="#">사이트맵</a>
 	</div>
 	<div class="clear"></div>
 	<nav id="topMenu">

@@ -10,7 +10,7 @@
 	border-collapse: collapse;
 	border-top: 2px solid #333;
 	border-bottom: 2px solid #333;
-	width: 100%;
+	width: 100%; 
 	text-align: center;
 	
 }
@@ -36,10 +36,11 @@
 	border-bottom-color: #666; 
 }
 
-/* 
+
 #boardContent #rightContent{
 	display:inline-block;
 	width:75%;
-} */
+	min-height: 600px;
+}
 
 

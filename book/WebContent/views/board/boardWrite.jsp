@@ -18,13 +18,13 @@
 <body>
 <div><jsp:include page="../main/header.jsp"/></div>
 <br /><br />
-<jsp:include page="boardMenu.jsp" />
+
 <article id="boardContent">
 
-	
+	<jsp:include page="boardMenu.jsp" />
 
 	<section id="rightContent">
-
+		
 		<form action="<%=request.getContextPath()%>/board/write.soso">
 			<table>
 			 	<colgroup>

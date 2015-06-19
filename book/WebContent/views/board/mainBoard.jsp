@@ -1,23 +1,14 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-   <%@ page import="java.util.*,java.text.*" %>    
+    <%@ page import="java.util.*,java.text.*" %>
 <!doctype html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8" />
-	<title>룰루랄라</title>
-	<style>
-		@import url("<%=request.getContextPath()%>/css/board/boardList.css");
-	</style>
+	<title>메인에 들어갈 게시판</title>
 </head>
 <body>
-
-<article id="boardContent">
-<div><jsp:include page="../main/header.jsp"/></div>
-<br /><br />
-	<jsp:include page="boardMenu.jsp" />
-
-	<section id="rightContent">
+<section id="rightContent">
 	<%
 		Date date = new Date();
 		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
@@ -82,7 +73,6 @@
 			</table>
 		</div>
 	</section>
-</article>
-<div><jsp:include page="../main/footer.jsp"/></div>
+	
 </body>
 </html>

@@ -15,7 +15,7 @@
 </head>
 <body>
 <div><jsp:include page="../main/header.jsp"/></div>
-<br /><br />
+
 	<article id="reservationContent">
 
 		<jsp:include page="/views/reservation/reservationMenu.jsp" />
@@ -23,6 +23,7 @@
 		<section class="rightContent">
 
 			<div>
+			<br /><br />
 				<b style="font-size: 32px">예약 완료</b>
 				<form action="<%=request.getContextPath()%>/del.soso" style="font-size: 21px">
 					<%=request.getAttribute("memberId")%>
