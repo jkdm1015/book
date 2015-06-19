@@ -14,9 +14,9 @@
 <br /><br />
 	<jsp:include page="Aside.jsp"></jsp:include>
 	<article class="book">
-	<div>
+	<div style="min-height: 600px">
 		<div>
-			<form action="<%= request.getContextPath() %>/book/bookInfoSearch.soso" style="min-height: 600px"> 
+			<form action="<%= request.getContextPath() %>/book/bookInfoSearch.soso"> 
 				<table>
 					<tr>
 						<td>
@@ -32,6 +32,7 @@
 					</tr>
 				</table>
 			</form>
+			<br /><br /><br />
 			
 		</div>
 			

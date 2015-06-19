@@ -18,6 +18,8 @@
 
 	<div class="center">
 		<div class="center">
+		해당 페이지는 열자마자 연체일 검색에 따른 목록이 나와야 합니다. 현재 서블릿만으로는 구현 불가페이지 입니다. 
+		<br /><br />
 			<form action="<%= request.getContextPath() %>/book/bookOverdueSearch.soso" style="min-height: 600px"> 
 				<table>
 					<tr>
@@ -34,10 +36,8 @@
 						<td><input type="submit" value="검색"></td>
 					</tr>
 				</table>
-			</form>
-			해당 페이지는 열자마자 연체일 검색에 따른 목록이 나와야 합니다. 현재 서블릿만으로는 구현 불가페이지 입니다. 
-		</div>
-		<div>
+				<br /><br /><br />
+				<div>
 		<table class="rightSort">
 			<tr>
 				<td>no.</td>
@@ -98,6 +98,10 @@
 			
 		</table>
 		</div>	
+			</form>
+			
+		</div>
+		
 		<%-- <% 
 		int count=0;
 		

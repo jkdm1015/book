@@ -98,8 +98,8 @@
 				<td><input type="submit" value="검색"></td>
 			</tr>
 		</table>
-	</form>
-	<div>
+		<br /><br /><br />
+		<div>
 		<%
 			int count = 0;
 
@@ -131,6 +131,8 @@
 		<%
 			} %>
 	</div>
+	</form>
+	
 	</article>
 	<div><jsp:include page="../main/footer.jsp"/></div>	
 </body>
